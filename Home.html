@@ -6,7 +6,7 @@
 <style>
 div.container {
     width: 100%;
-    border: 2px solid gray;
+    border: 5px solid gray;
 }
 
 header, footer {
@@ -18,8 +18,8 @@ header, footer {
 }
 
 article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
+    margin-left: 10px;
+
     padding: 1em;
     overflow: hidden;
 }
@@ -27,25 +27,96 @@ article {
 body {background-color: powderblue;}
 p    {color: indigo;}
 
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
 </style>
 
 </head>
 
 <body>
+
+  <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">More</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
   <div class="container">
 
 <header>
-<h1 style="color:navy;"><b>DREAM</b>ERS
+    <h1 style="color:navy;"><center><b>DREAM</b>ERS</center></h1>
 </header>
 
 <article>
 
-<h1 style="color:navy;">What is a DREAMer?</h1>
+<center><h1 style="color:navy;">What is a DREAMer?</h1></center>
 
-<p>The word DREAMer is in itself an acronym because the first part of the word (DREAM) stands for Development, Relief,
+<p><right>The word DREAMer is in itself an acronym because the first part of the word (DREAM) stands for Development, Relief,
   and Education for Alien Minors. This comes from the DREAM Act which was first introduced to legislation in 2001 and
   was meant to provide a pathway to citizenship for people who were brought over to the United States as children and
-  have grown up to be an American in every sense of the word <i>except</i> on paper.</p>
+  have grown up to be an American in every sense of the word <i>except</i> on paper.</right></p>
 
 <p>Another legislation was introduced to during Obama's administration which was called DACA. This stood for Deferred
 Action for Childhood Arrivals and was proposed to</p>
