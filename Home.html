@@ -17,16 +17,33 @@ header, footer {
     clear: left;
     text-align: center;
 }
-
-article {
-    margin-left: 250px;
-    margin-right: 250px;
-
+.nav{backgroound:#eee;}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
     padding: 1em;
-    overflow: hidden;
 }
 
-body {background-color: powderblue;}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid navy;
+    padding: 1em;
+    overflow: hidden;
+    background-color: powderblue;
+
+}
+
+
 p    {color: indigo;}
 
 
@@ -47,9 +64,17 @@ p    {color: indigo;}
     <center><img src = "DREAM.jpg.jpg" alt "dreamers" width = "500px" height="200px"></center>
 </header>
 
+<nav>
+  <ul>
+    <li><a href="#">London</a></li>
+    <li><a href="#">Paris</a></li>
+    <li><a href="#">Tokyo</a></li>
+  </ul>
+</nav>
+
 <article>
 
-<center><h2 style="color:navy;">What is a DREAMer?</h2></center>
+<center><h2 style="color:navy;">Who are DREAMers?</h2></center>
 
 <p style="font-size:20px"><right>The word DREAMer is in itself an acronym because the first part of the word (DREAM) stands for Development, Relief,
   and Education for Alien Minors. This comes from the DREAM Act which was first introduced to legislation in 2001 and
@@ -78,7 +103,7 @@ People from his administration including the presdient himself has thought of be
 
 </article>
 
-<right><img src="monarch.gif" alt="Monarch" style="width:100px; height:100px;"></right>
+<!--<right><img src="monarch.gif" alt="Monarch" style="width:100px; height:100px;"></right>-->
 </div>
 
 </body>
