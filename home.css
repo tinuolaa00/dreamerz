@@ -57,11 +57,11 @@ h5 {
   font-size:300%
 }
 
-h1 {
-  font-size:30px
+h1 {font-family:courier;
+  font-size:20px
 }
 h2 {
-  font-size:25px
+  font-size:30px
 }
 
 li {
